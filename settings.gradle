@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "comet vision app"
+rootProject.name = "dev comet vision app"
 include ':app'

@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">comet vision app</string>
+    <string name="app_name">CVApp</string>
+    <string name="logo_name">CVApp</string>
 </resources>

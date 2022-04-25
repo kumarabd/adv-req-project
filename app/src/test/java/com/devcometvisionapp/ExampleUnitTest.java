@@ -1,4 +1,4 @@
-package com.cometvision;
+package com.devcometvisionapp;
 
 import org.junit.Test;
 
