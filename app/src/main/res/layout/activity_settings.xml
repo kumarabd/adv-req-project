@@ -11,57 +11,66 @@
         android:id="@+id/settings_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Settings Menu"
+        android:layout_marginTop="48dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Settings"
         android:textColor="@color/white"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/btn_manage_schedule"
+        android:textSize="48sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.445" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/btn_manage_schedule"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="25dp"
+        android:layout_marginTop="48dp"
+        android:backgroundTint="#FF8F00"
         android:text="Manage Schedule"
-        app:layout_constraintBottom_toTopOf="@+id/btn_edit_emergency_contact"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btn_edit_emergency_contact"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="25dp"
-        android:text="Edit Emergency Contact"
-        app:layout_constraintBottom_toTopOf="@+id/btn_edit_shortcuts"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/btn_edit_shortcuts"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
-        android:layout_marginBottom="25dp"
-        android:text="Edit Shortcuts"
-        app:layout_constraintBottom_toTopOf="@+id/btn_alarm_sounds"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/settings_text" />
 
     <Button
         android:id="@+id/btn_alarm_sounds"
         android:layout_width="300dp"
         android:layout_height="100dp"
-        android:layout_marginBottom="120dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF8F00"
         android:text="Alarm Sounds"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_shortcuts" />
+
+    <Button
+        android:id="@+id/btn_edit_shortcuts"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF8F00"
+        android:text="Edit Shortcuts"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_edit_emergency_contact" />
+
+    <Button
+        android:id="@+id/btn_edit_emergency_contact"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#FF8F00"
+        android:text="Edit Emergency Contact"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_manage_schedule" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -6,8 +6,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.core.app.ActivityCompat;
 
+import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.net.Uri;
 import android.os.Bundle;
 import android.speech.RecognitionListener;
 import android.speech.RecognizerIntent;
@@ -210,7 +212,14 @@ public class MainActivity extends AppCompatActivity {
                                         // When y velocity is greater than velocity threshold
                                         if (yDiff < 0) {
                                             // When swipe up
-                                            Intent i = new Intent(MainActivity.this, Emergency.class);
+//                                            Intent i = new Intent(MainActivity.this, Emergency.class);
+//                                            startActivity(i);
+                                            String phNumber = "1234567890";
+                                            Intent i = new Intent(Intent.ACTION_CALL);
+                                            i.setData(Uri.parse("tel:" + phNumber));
+                                            if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED){
+
+                                            }
                                             startActivity(i);
                                         } else {
                                             finish();
